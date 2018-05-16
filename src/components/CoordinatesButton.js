@@ -14,9 +14,7 @@ export default class CoordinatesButton extends React.Component{
 
 
 	coordinates = (e) => {
-		const array = []
-		array.push(e.clientX, e.clientY);
-		this.props.onReceiveCoordinates(array);
+		this.props.onReceiveCoordinates([e.clientX, e.clientY]);
 
   }
 
